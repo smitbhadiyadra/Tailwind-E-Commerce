@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Commerce</title>
+    <link rel="shortcut icon" href="imgs/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="overflow-x-hidden">
+    
+    <div class="main w-screen bg-[#fff]">
+        <div class="page1 w-full h-[110vh] relative font-['clashMedium']">
+            <nav class="w-[96%] my-2 mx-[2%] h-14 absolute flex justify-between border-2  border-[#bdbcbc] rounded-2xl px-8">
+                <div class="logo h-full flex items-center justify-center leading-none font-semibold tracking-wider">
+                    PUREM <br> ODA
+                </div>
+                <div class="list w-auto h-full flex gap-10 justify-center items-center font-bold text-[#2e2e2e] text-sm tracking-widest font-[clashRegular]">
+                    <a href="#" class="hover:text-[#8e8e8e]">WOMENSWEAR</a>
+                    <a href="#" class="hover:text-[#8e8e8e]">MENSWEAR</a>
+                    <a href="#" class="hover:text-[#8e8e8e]">KIDS</a>
+                    <a href="#" class="hover:text-[#8e8e8e]">SALE</a>
+                    <a href="#" class="hover:text-[#8e8e8e]">DISCOVER</a>
+                </div>
+                <div class="menu flex justify-center items-center gap-3 text-xl">
+                    <input type="text" placeholder="search" class="w-[100%] h-[80%] rounded-full px-3 text-base tracking-wider cursor-pointer bg-[#eaeaea]">
+                    <i class="ri-heart-3-line cursor-pointer"></i>
+                    <i class="ri-shopping-bag-4-line cursor-pointer"></i>
+                </div>
+            </nav>
+
+            <div class="hero overflow-x-hidden overflow-y-hidden w-full h-[110vh] flex justify-between items-center pt-20 px-6 pb-1 gap-1">
+                <div class="left w-1/2 h-full flex flex-col justify-center px-1 gap-2">
+                    <div class="top relative w-full h-[55%] rounded-3xl flex flex-col justify-between p-8 cursor-pointer bg-[#DBDAD8]">
+                        <img src="imgs/rightArrow.png" alt="arrowImg" class="absolute w-20 top-6 left-44">
+                        <h1 class="font-[clashBold] text-[4vw] uppercase leading-none">For <br> Everyone but <br> notanyone</h1>
+                        <p class=" text-base opacity-70 font-[clashMedium] tracking-normal">We establish personal relationships with our boutiques, to make <br>
+                            sure each is vetted for a stress-free shopping experience</p>
+                    </div>
+                    <div class="bottom w-full h-[45%] flex gap-2">
+                        <div class="box relative w-1/2 h-full cursor-pointer rounded-3xl bg-[url('imgs/left.png')] bg-cover  bg-top bg-no-repeat bg-[#B1B1B1]">
+                            <h2 class="text-4xl text-white tracking-wider absolute bottom-3 left-6 font-[clashBold] uppercase">#rip stop</h2>
+                        </div>
+                        <div class="box relative w-1/2 h-full cursor-pointer rounded-3xl bg-[url('imgs/right.png')] bg-[length:380px] bg-no-repeat object-cover bg-top bg-[#5A6C63]">
+                            <h2 class="text-4xl text-white tracking-wider absolute bottom-3 left-6 font-[clashBold] uppercase">#insulated</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right w-1/2 h-full rounded-3xl cursor-pointer flex justify-end items-end pb-8 pr-8 gap-4 bg-[url('imgs/hero.png')] bg-cover bg-center bg-no-repeat">
+                    <button class="flex justify-between items-center gap-12 px-2 py-1.5 rounded-full bg-white hover:bg-black hover:text-white duration-500">
+                        <h3 class="pl-4 font-[clashMedium] tracking-wider ">Learn More</h3>
+                        <h3 class="w-[35px] h-[35px] flex justify-center items-center rounded-full bg-black hover:-rotate-90 duration-500"><i class="ri-arrow-down-line text-xl text-white "></i></h3>
+                    </button>
+                    <button class="flex justify-between items-center gap-12 px-2 py-1.5 rounded-full text-white bg-transparent border-2 hover:border-black hover:text-black duration-500">
+                        <h3 class="pl-4 font-[clashMedium] tracking-wider">Contact us</h3>
+                        <h3 class="w-[35px] h-[35px] flex justify-center items-center rounded-full bg-white"><i class="ri-mail-line text-xl text-black"></i></h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="page2 overflow-hidden relative w-full h-[100vh] flex justify-center items-center">
+            <h1 class="text-nowrap transition duration-1000 font-[clashSemiBold] leading-normal text-5xl text-center">Puremod Something for Elevated Everyday <br> 
+                Life. Styles Change <span class="w-fit relative inline-block mx-1 px-8 pl-20 rounded-full border-2 border-black"> <img src="imgs/star.png" alt="starImg" class="w-[40px] absolute top-[50%] left-[0%] translate-x-[50%] translate-y-[-50%]"> with seasons</span> united <br>
+                by the liberating essence of travel-inspired <br>
+                lightheartedness
+            </h1>
+            <img id="img1" src="imgs/page2First.png" alt="menWithHat" class="absolute w-[8%] transition duration-1000 object-cover rounded-full top-28 left-1/3">
+            <img id="img2" src="imgs/page2Second.png" alt="menWithHat" class="absolute w-[8%] transition duration-1000 object-cover rounded-full bottom-1/4 right-1/4">
+            <img id="img3" src="imgs/page2Third.png" alt="womenWithHat" class="absolute w-[8%] transition duration-1000 object-contain rounded-full bottom-1/4 left-1/4">
+        </div>
+
+
+
+        <div class="page3 overflow-hidden w-full flex flex-col">
+            <div class="top w-full h-[20vh] flex justify-between items-end pb-6 px-16">
+                <h2 class="font-[clashSemiBold] text-5xl leading-none uppercase">Shop by <br> essentials</h2>
+                <div class="buttons flex gap-5">
+                    <button id="1" class="sort active border-2 border-black rounded-full flex justify-center items-center text-xl font-[clashSemiBold] uppercase px-5 py-2 hover:bg-black hover:text-white hover:duration-700">All<sub>12</sub></button>
+                    <button id="2" class="sort  border-2 border-black rounded-full flex justify-center items-center text-xl font-[clashSemiBold] uppercase px-5 py-2 hover:bg-black hover:text-white hover:duration-700">summer col<sub>12</sub></button>
+                    <button id="3" class="sort  border-2 border-black rounded-full flex justify-center items-center text-xl font-[clashSemiBold] uppercase px-5 py-2 hover:bg-black hover:text-white hover:duration-700">new ariv<sub>12</sub></button>
+                    <button id="4" class="sort  border-2 border-black rounded-full flex justify-center items-center text-xl font-[clashSemiBold] uppercase px-5 py-2 hover:bg-black hover:text-white hover:duration-700">best sell<sub>12</sub></button>
+                    <button id="5" class="sort  border-2 border-black rounded-full flex justify-center items-center text-xl font-[clashSemiBold] uppercase px-5 py-2 hover:bg-black hover:text-white hover:duration-700">flash<sub>12</sub></button>
+                </div>
+            </div>
+            <div id="cards" class="bottom w-full h-fit py-8 pl-16 flex flex-wrap gap-6">
+                
+            </div>
+        </div>
+
+
+        <div class="page4 w-full h-screen flex gap-4 p-6">
+            <div class="left relative transition duration-1000 w-[40%] h-full rounded-3xl bg-[url('imgs/page4.png')] bg-no-repeat bg-cover bg-top bg-red-200">
+                <div class="learnMore absolute -bottom-5 left-1/2 -translate-x-1/2 p-2 w-1/2 h-[10%] rounded-[40px]  bg-white">
+                    <div class="w-full h-full bg-[#DBDAD8] cursor-pointer rounded-[30px] flex justify-between items-center px-6">
+                        <h1 class="font-[clashRegular] uppercase text-lg">learn more</h1>
+                        <i class="ri-arrow-right-up-line text-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="right transition duration-1000 w-[60%] h-full flex flex-col justify-between p-24 rounded-3xl bg-[#6D8450]">
+                <h1 class="transition duration-1000 capitalize font-[clashBold] text-7xl leading-none">We're changing <br> the way things <br> get made</h1>
+                <div class="details w-full h-1/3 flex border-2 border-gray-900 rounded-3xl overflow-hidden">
+                    <div class="sustainability transition duration-1000 w-1/2 h-full pl-6 ">
+                        <div class="up w-full h-1/2 flex items-center gap-3">
+                            <img class=" w-[45px] h-[45px] object-cover" src="imgs/saturn.png" alt="saturnImg">
+                            <h2 class=" font-[clashSemiBold] uppercase text-2xl">sustainability</h2>
+                        </div>
+                        <div class="down w-full h-1/2">
+                            <p class="font-[clashMedium] text-normal tracking-tight leading-tight opacity-90">We're challenging conventional retail, <br>
+                                putting an end to dead stock, <br>
+                                unconventional waste and more fantastic</p>
+                        </div>
+                    </div>
+                    <div class="mission transition duration-1000 w-1/2 h-full pl-6 ">
+                        <div class="up w-full h-1/2 flex items-center gap-3">
+                            <img class=" w-[40px] h-[40px] object-cover" src="imgs/earth.png" alt="earthImg">
+                            <h2 class=" font-[clashSemiBold] uppercase text-2xl">MISSION</h2>
+                        </div>
+                        <div class="down w-full h-1/2">
+                            <p class="font-[clashMedium] text-normal tracking-tight leading-tight opacity-90">We're on a mission to empower <br>
+                                create independence in a commercial <br>
+                                world and incredible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page5 w-full h-[110vh] flex flex-col justify-between items-center p-16 gap-7">
+            <h1 class="uppercase transition duration-1000 font-[clashBold] text-5xl text-center">want to design your own? <br> calm, we can do it</h1>
+            <div class="learn transition duration-1000 relative w-full h-[90%] rounded-3xl bg-[url('imgs/work.png')] bg-no-repeat bg-cover bg-green-400">
+                <div class="learnMore absolute -bottom-5 left-1/2 -translate-x-1/2 p-2 w-[20%] h-[10%] rounded-[40px]  bg-white">
+                    <div class="btn w-full transition duration-1000 h-full bg-[#DBDAD8] cursor-pointer rounded-[30px] flex justify-between items-center px-6">
+                        <i class="ri-play-line text-xl"></i>
+                        <h1 class="font-[clashRegular] capitalize text-lg">whatch to learn more</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="w-full h-[40vh] bg-black flex text-white px-3 overflow-hidden">
+            <div class="one w-[30%] h-full flex flex-col justify-center gap-16 px-12">
+                <h1 class="font-[clashBold] text-5xl">PUREM <br> ODA</h1>
+                <h4 class="uppercase font-[clashSemiBold] text-lg">for everone but not anyone</h4>
+            </div>
+            <div class="two w-[15%] h-full flex flex-col py-16 gap-6 px-2">
+                <h1 class="font-[clashMedium] text-lg">PRODUCT</h1>
+                <ul class="opacity-60">
+                    <li><a class="font-[clashRegular] text-base" href="#">Jackets</a></li>
+                    <li><a class="font-[clashRegular] text-base" href="#">Shirts</a></li>
+                    <li><a class="font-[clashRegular] text-base" href="#">Dresses</a></li>
+                    <li><a class="font-[clashRegular] text-base" href="#">Outwears</a></li>
+                    <li><a class="font-[clashRegular] text-base" href="#">Hats</a></li>
+                </ul>
+            </div>
+            <div class="three w-[15%] h-full flex flex-col py-16 gap-6 px-2">
+                <h1 class="font-[clashMedium] text-lg">BUYING</h1>
+                <ul class="opacity-60">
+                    <li><a class="font-[clashRegular] text-base" href="#">Shop</a></li>
+                    <li><a class="font-[clashRegular] text-base" href="#">Term of Use</a></li>
+                    <li><a class="font-[clashRegular] text-base" href="#">Privacy</a></li>
+                    <li><a class="font-[clashRegular] text-base" href="#">How it works</a></li>
+                    <li><a class="font-[clashRegular] text-base" href="#">Customer Service</a></li>
+                </ul>
+            </div>
+            <div class="three w-[15%] h-full flex flex-col py-16 gap-6 px-2">
+                <h1 class="font-[clashMedium] text-lg">Social</h1>
+                <ul class="opacity-60">
+                    <li><a class="font-[clashRegular] text-base" href="#">Instagram</a></li>
+                    <li><a class="font-[clashRegular] text-base" href="#">Twitter</a></li>
+                    <li><a class="font-[clashRegular] text-base" href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="five relative w-[25%] h-full flex flex-col py-16 gap-6 px-2">
+                <h1 class=" font-[clashMedium] uppercase text-lg">Join Our Community</h1>
+                <div class="w-[75%] h-[25%] border-2 border-white rounded-full flex justify-between px-1 items-center">
+                    <input class="w-[75%] h-full bg-transparent rounded-full  text-white px-6 focus:border-none active:border-none" type="text" placeholder="EMAIL ADDRESS">
+                    <div class="w-[35px] h-[35px] bg-white rounded-full pr-1 pt-1 flex justify-center items-center">
+                        <i class="ri-send-plane-fill text-black text-xl "></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: clashXLight;
+  src: url();
+}
+
+@font-face {
+  font-family: clashLight;
+  src: url(font/ClashDisplay-Light.otf);
+}
+
+@font-face {
+  font-family: clashMedium;
+  src: url(font/ClashDisplay-Medium.otf);
+}
+
+@font-face {
+  font-family: clashRegular;
+  src: url(font/ClashDisplay-Regular.otf);
+}
+
+@font-face {
+  font-family: clashSemiBold;
+  src: url(font/ClashDisplay-Semibold.otf);
+}
+
+@font-face {
+  font-family: clashBold;
+  src: url(font/ClashDisplay-Bold.otf);
+}
+
+
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #7F7F7F;
+  border-radius: 50px;
+}
