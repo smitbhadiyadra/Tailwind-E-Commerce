@@ -266,31 +266,36 @@ let buttons = document.querySelector(".buttons");
 let page3Cards = document.querySelector("#cards");
 
 let cards = [
-    {img: "1.png", title: "cord shirt", price: 100, tag: "new arrival"},
-    {img: "2.png", title: "cpo shirt", price: 90, tag: "get of 20%"},
-    {img: "3.png", title: "summer t-shirt", price: 60, tag: ""},
-    {img: "4.png", title: "t-shirts", price: 98, tag: ""},
-    {img: "5.png", title: "cardigan", price: 120, tag: ""},
-    {img: "6.png", title: "jacket casualy", price: 88, tag: ""},
+    {img: "1.png", title: "cord shirt", price: 100, quantity: 8, tag: "new arrival"},
+    {img: "2.png", title: "cpo shirt", price: 90, quantity: 15, tag: "get of 20%"},
+    {img: "3.png", title: "summer t-shirt", price: 60, quantity: 3, tag: ""},
+    {img: "4.png", title: "t-shirts", price: 98, quantity: 6, tag: ""},
+    {img: "5.png", title: "cardigan", price: 120, quantity: 10, tag: ""},
+    {img: "6.png", title: "jacket casualy", price: 88, quantity: 7, tag: ""},
 ]
 
 function addCards(){
     let clutter = ""
 
     cards.forEach(function(card, index){
-        clutter += `<div id=${index} class="card transition duration-1000 relative flex flex-col justify-between w-[23%] h-[70vh]">
-                      <div class="top w-full h-[85%] bg-[url('imgs/${card.img}')] p-4 bg-cover bg-top bg-no-repeat rounded-3xl" style="background-image: url(imgs/${card.img}); background-repeat: no-repeat; background-position: top; background-size: cover;">
+        clutter += `<div id=${index} class="card transition duration-1000 relative flex flex-col justify-between gap-3 w-[23%] h-[70vh]">
+                      <div class="top cursor-pointer w-full h-[75%] bg-[url('imgs/${card.img}')] p-4 bg-cover bg-top bg-no-repeat rounded-3xl" style="background-image: url(imgs/${card.img}); background-repeat: no-repeat; background-position: top; background-size: cover;">
                           <div class="tag uppercase px-4 py-1 inline-block rounded-full bg-gray-300 text-sm font-[clashMedium]">${card.tag}</div>
                       </div>
-                      <div class="bottom w-full h-[15%] flex flex-col gap-2 leading-none pt-3 justify-end ">
-                          <h2 class="w-full h-1/2 font-[clashSemiBold] uppercase text-3xl">${card.title}</h2>
-                          <div class="priceTag w-full h-1/2 flex justify-between"> 
-                            <h3 class="font-[clashSemiBold] text-xl opacity-50">$${card.price}</h3>
-                            <div class="count flex w-1/3 h-full justify-evenly rounded-lg overflow-hidden">
-                              <div id="${index}" class="minus font-[clashMedium] cursor-pointer text-2xl w-1/3 h-full flex justify-center items-center bg-gray-200 p-2">-</div>
-                              <div id="${index}" class="num font-[clashMedium] text-xl w-1/3 h-full flex justify-center items-center bg-gray-100 p-2">0</div>
-                              <div id="${index}" class="plus font-[clashMedium] cursor-pointer text-2xl w-1/3 h-full flex justify-center items-center bg-gray-200 p-2">+</div>
+                      <div class="bottom pointer-events-none relative w-full h-[25%] flex flex-col gap-2 leading-none pt-1 justify-end ">
+                          <h2 class="w-full pointer-events-none h-[25%] font-[clashSemiBold] uppercase text-2xl">${card.title}</h2>
+                          <div class="priceTag pointer-events-none w-full h-[25%] flex justify-between"> 
+                            <h3 class="font-[clashSemiBold] pointer-events-none text-xl text-gray-500">$${card.price} &nbsp; &nbsp; <span class=" text-base tracking-wider text-red-500">(${card.quantity}pcs. left)</span></h3>
+                            <div class="count pointer-events-none flex w-1/3 h-full justify-evenly rounded-lg overflow-hidden">
+                              <div id="minus" class="minus ${index} active:scale-90 pointer-events-auto font-[clashMedium] cursor-pointer text-2xl w-1/3 h-full flex justify-center items-center bg-gray-200 p-2">-</div>
+                              <div  class="num ${index} active:scale-90 pointer-events-none font-[clashMedium] text-xl w-1/3 h-full flex justify-center items-center bg-gray-100 p-2">0</div>
+                              <div id="plus" class="plus ${index} active:scale-90 pointer-events-auto font-[clashMedium] cursor-pointer text-2xl w-1/3 h-full flex justify-center items-center bg-gray-200 p-2">+</div>
                             </div>
+                          </div>
+                          <div class="cart relative w-full h-[50%] gap-2 flex justify-between items-center">
+                            <button class="w-full p-3 h-full active:scale-95 transition duration-500 hover:bg-black  pointer-events-auto cursor-pointer text-white font-semibold flex justify-center items-center rounded-lg bg-gray-700">
+                              Add to Cart
+                            </button>
                           </div>
                       </div>
                     </div>`
@@ -302,6 +307,41 @@ function addCards(){
 }
 
 addCards();
+
+let minus = document.querySelectorAll("#minus");
+let plus = document.querySelectorAll("#plus");
+let num = document.querySelectorAll(".num");
+
+    
+// console.log(minus)
+
+minus.forEach((el,index)=>{
+  el.addEventListener("click", function(e){
+
+    let m = num[index].innerText;
+    if(m>0){
+      m--;
+      num[index].innerText = m
+    } 
+
+  })
+})
+
+plus.forEach((el, index)=>{
+  el.addEventListener("click", function(e){
+
+    let p = num[index].innerText;
+    console.log(cards[index].quantity);
+    if(p<cards[index].quantity){
+      p++;
+      num[index].innerText = p;
+    }
+
+  })
+})
+
+  
+
 
 
 

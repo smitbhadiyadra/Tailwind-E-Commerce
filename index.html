@@ -13,7 +13,7 @@
     
     <div class="main w-screen bg-[#fff]">
         <div class="page1 w-full h-[110vh] relative font-['clashMedium']">
-            <nav class="w-[96%] my-2 mx-[2%] h-14 absolute flex justify-between border-2  border-[#bdbcbc] rounded-2xl px-8">
+            <nav class="w-[96%] z-[999] my-2 mx-[2%] h-14 absolute flex justify-between border-2  border-[#bdbcbc] rounded-2xl px-8">
                 <div class="logo h-full flex items-center justify-center leading-none font-semibold tracking-wider">
                     PUREM <br> ODA
                 </div>
@@ -31,15 +31,23 @@
                 </div>
             </nav>
 
-            <div class="hero overflow-x-hidden overflow-y-hidden w-full h-[110vh] flex justify-between items-center pt-20 px-6 pb-1 gap-1">
-                <div class="left w-1/2 h-full flex flex-col justify-center px-1 gap-2">
+            <div class="hero relative overflow-x-hidden overflow-y-hidden w-full h-[110vh] flex justify-between items-center pt-20 px-6 pb-1 gap-1">
+                <!-- <div class="cartMenu font-[clashMedium] absolute z-[99] w-[30%] h-[50%] right-8 top-[10%] rounded-2xl overflow-hidden bg-white border-2 border-black">
+                    <h2 class="h2 text-2xl underline uppercase text-center text-black">Your Cart</h2>
+                    <div class="cards w-full h-full sticky mt-2  bg-purple-300">
+                        <div class="item relative w-full h-[25%] border-b-2 border-black">
+                            <img class="h-[90px] w-[90px] object-cover" src="imgs/2.png" alt="img">
+                        </div>
+                    </div>
+                </div> -->
+                <div class="left z-[9] w-1/2 h-full flex flex-col justify-center px-1 gap-2">
                     <div class="top relative w-full h-[55%] rounded-3xl flex flex-col justify-between p-8 cursor-pointer bg-[#DBDAD8]">
                         <img src="imgs/rightArrow.png" alt="arrowImg" class="absolute w-20 top-6 left-44">
                         <h1 class="font-[clashBold] text-[4vw] uppercase leading-none">For <br> Everyone but <br> notanyone</h1>
                         <p class=" text-base opacity-70 font-[clashMedium] tracking-normal">We establish personal relationships with our boutiques, to make <br>
                             sure each is vetted for a stress-free shopping experience</p>
                     </div>
-                    <div class="bottom w-full h-[45%] flex gap-2">
+                    <div class="bottom  w-full h-[45%] flex gap-2">
                         <div class="box relative w-1/2 h-full cursor-pointer rounded-3xl bg-[url('imgs/left.png')] bg-cover  bg-top bg-no-repeat bg-[#B1B1B1]">
                             <h2 class="text-4xl text-white tracking-wider absolute bottom-3 left-6 font-[clashBold] uppercase">#rip stop</h2>
                         </div>
@@ -49,7 +57,7 @@
                     </div>
                 </div>
 
-                <div class="right w-1/2 h-full rounded-3xl cursor-pointer flex justify-end items-end pb-8 pr-8 gap-4 bg-[url('imgs/hero.png')] bg-cover bg-center bg-no-repeat">
+                <div class="right z-[9] w-1/2 h-full rounded-3xl cursor-pointer flex justify-end items-end pb-8 pr-8 gap-4 bg-[url('imgs/hero.png')] bg-cover bg-center bg-no-repeat">
                     <button class="flex justify-between items-center gap-12 px-2 py-1.5 rounded-full bg-white hover:bg-black hover:text-white duration-500">
                         <h3 class="pl-4 font-[clashMedium] tracking-wider ">Learn More</h3>
                         <h3 class="w-[35px] h-[35px] flex justify-center items-center rounded-full bg-black hover:-rotate-90 duration-500"><i class="ri-arrow-down-line text-xl text-white "></i></h3>
@@ -87,7 +95,7 @@
                 </div>
             </div>
             <div id="cards" class="bottom w-full h-fit py-8 pl-16 flex flex-wrap gap-6">
-                
+               
             </div>
         </div>
 

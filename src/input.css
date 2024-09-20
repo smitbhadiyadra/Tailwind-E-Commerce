@@ -43,3 +43,12 @@
   background-color: #7F7F7F;
   border-radius: 50px;
 }
+
+#plus::selection, #minus::selection{
+  background-color: transparent;
+}
+
+::selection{
+  background-color: #ff660071;
+  color: #242424;
+}
